@@ -50,10 +50,47 @@ function HomeScreen({ navigation }) {
 }
 function Sobre({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Sobre</Text>
-      <Button title="Voltar" onPress={() => navigation.goBack()} />
-    </View>
+    <SafeAreaView style={styles.container}>
+       <ScrollView style={styles.scrollView}>
+       <Image
+          source={require("./assets/sobreee.png")}
+          style={{
+            width: 300,
+            height: 430,
+            marginTop: 10,
+            alignSelf: "center",
+          }}
+        />
+         <Image
+          source={require("./assets/fundo.png")}
+          style={{
+            width: 400,
+            height: 400,
+            marginTop: -140,
+            alignSelf: "center",
+          }}
+        />
+      
+      <TouchableOpacity
+          onPress={() => navigation.goBack()}
+          style={{
+            backgroundColor: "#DF571D",
+            marginTop: 20,
+            width: 132,
+            height: 50,
+            borderRadius: 18,
+            paddingHorizontal: 38,
+            marginVertical: 20,
+            paddingVertical: 15,
+            backgroundColor: "#DF571D",
+            alignSelf: "center",
+            borderWidth: 2,
+          }}
+        >
+          <Text style={{ color: "#FFF", textAlign: "center" }}>VOLTAR</Text>
+        </TouchableOpacity>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
@@ -87,7 +124,29 @@ function História({ navigation }) {
           style={{
             width: 300,
             height: 350,
-            marginTop: 20,
+            marginTop: -40,
+            alignSelf: "center",
+          }}
+        />
+        <Image
+          source={require("./assets/cont.png")}
+          style={{
+            width: 350,
+            height: 450,
+            marginTop: -70,
+            alignSelf: "center",
+          }}
+        />
+        <Text
+          style={{ textAlign: "center", marginHorizontal: 35, marginTop: -90 }}>
+          A arte contemporânea é um movimento vasto e diversificado que abrange uma ampla gama de estilos, técnicas e ideias. Surgiu no final do século 20 e continua a evoluir até hoje. Caracterizada por sua natureza experimental e conceitual, a arte contemporânea desafia as convenções tradicionais e busca explorar questões sociais, políticas e culturais. Utiliza uma variedade de mídias, incluindo pintura, escultura, instalação, vídeo e performance. Muitas vezes, enfatiza a expressão individual, o engajamento com o público e a reflexão crítica sobre o mundo moderno. Artistas contemporâneos frequentemente buscam romper fronteiras entre disciplinas e provocar novas formas de pensamento e percepção.
+        </Text>
+        <Image
+          source={require("./assets/pessoas.png")}
+          style={{
+            width: 250,
+            height: 400,
+            marginTop: -0,
             alignSelf: "center",
           }}
         />
@@ -95,19 +154,20 @@ function História({ navigation }) {
         <TouchableOpacity
           onPress={() => navigation.goBack()}
           style={{
-            backgroundColor: "black",
+            backgroundColor: "#DF571D",
             marginTop: 20,
-            width: 20,
-            height: 40,
+            width: 132,
+            height: 50,
             borderRadius: 18,
             paddingHorizontal: 38,
             marginVertical: 20,
             paddingVertical: 15,
             backgroundColor: "#DF571D",
             alignSelf: "center",
+            borderWidth: 2,
           }}
         >
-          <Text style={{ color: "white", textAlign: "center" }}>Voltar</Text>
+          <Text style={{ color: "#FFF", textAlign: "center" }}>VOLTAR</Text>
         </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>
@@ -116,10 +176,81 @@ function História({ navigation }) {
 
 function RA({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>RA</Text>
-      <Button title="Voltar" onPress={() => navigation.goBack()} />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.scrollView}>
+        <Image
+          source={require("./assets/raaa.png")}
+          style={{
+            width: 500,
+            height: 400,
+            marginTop: 50,
+            alignSelf: "center",
+          }}
+        />
+        <Text
+          style={{ textAlign: "center", marginHorizontal: 35, marginTop: -330 }}
+        >
+          A realidade aumentada (RA) na arte é uma forma inovadora de combinar o mundo digital com o mundo físico, permitindo que os artistas criem experiências imersivas e interativas para o público. Na RA artística, elementos virtuais são sobrepostos ao ambiente real, geralmente visualizados através de dispositivos como smartphones, tablets ou óculos especiais.
+           Isso possibilita novas formas de contar histórias, explorar narrativas multidimensionais e desafiar as percepções tradicionais da arte. 
+       
+           </Text>
+           <Image
+          source={require("./assets/mulher.png")}
+          style={{
+            width: 350,
+            height: 450,
+            marginTop: -110,
+            alignSelf: "center",
+          }}
+        />
+        <Text style={{ textAlign: "center", marginHorizontal: 35, marginTop: -130 }}>
+        Alguns artistas usam robôs para criar obras de arte. Por exemplo, o artita Patrick Tresset desenvolveu robôs capazes de desenhar retratos realistas de pessoas. Patrick Tresset é um artista francês conhecido por sua exploração da interseção entre arte e inteligência artificial. Ele desenvolveu um projeto chamado "Paul the Robot", que é capaz de criar retratos realistas de pessoas. O projeto utiliza técnicas de visão computacional e algoritmos de aprendizado de máquina para permitir que o robô desenhe retratos a carvão em grandes folhas de papel.
+        </Text>
+        <Image
+          source={require("./assets/robo.png")}
+          style={{
+            width: 350,
+            height: 450,
+            marginTop: -70,
+            alignSelf: "center",
+          }}
+        />
+        <Text style={{ textAlign: "center", marginHorizontal: 35, marginTop: -105 }}>
+        Alguns museus e galerias brasileiros têm incorporado a RA em suas exposições para oferecer aos visitantes uma experiência mais envolvente e interativa. Por exemplo, o Museu de Arte Moderna de São Paulo (MAM-SP) já realizou exposições que incluíam elementos de RA para complementar as obras de arte em exibição.
+        </Text>
+        <Image
+          source={require("./assets/brasil.png")}
+          style={{
+            width: 350,
+            height: 450,
+            marginTop: -70,
+            alignSelf: "center",
+          }}
+        />
+        <Text style={{ textAlign: "center", marginHorizontal: 35, marginTop: -105 }}>
+        Outro ponto interessante é que, mesmo em um ano atípico, as tecnologias continuaram a receber investimentos. É o caso da RA, com mais de 2 milhões de dólares em financiamentos ao redor do globo, segundo a ABI Research.
+        </Text>
+
+        <TouchableOpacity
+          onPress={() => navigation.goBack()}
+          style={{
+            backgroundColor: "#DF571D",
+            marginTop: 20,
+            width: 132,
+            height: 50,
+            borderRadius: 18,
+            paddingHorizontal: 38,
+            marginVertical: 20,
+            paddingVertical: 15,
+            backgroundColor: "#DF571D",
+            alignSelf: "center",
+            borderWidth: 2,
+          }}
+        >
+          <Text style={{ color: "#FFF", textAlign: "center" }}>VOLTAR</Text>
+        </TouchableOpacity>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
